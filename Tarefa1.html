@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- PASSO 1: Configuração básica do documento coloque o titulo da pagina em title -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho do Héctor</title>
+
+    <!-- PASSO 2: criar os estilos para os itens> -->
+    <style>
+        body {
+
+            background: #0b1220;
+            /* fundo escuro */
+            color: #e9eef7;
+            /* texto claro */
+            line-height: 1.5;
+        }
+
+        /*estilo cabeçalho coloque o preenchimento e o cor de fundo*/
+        .cabecalho {
+            background: #19d4af;
+            padding: 30px;
+            border-radius: 15px;
+            
+        }
+
+        /*estilo para a caixa pai*/
+        .flex-container {
+          display: flex;
+          justify-content: space-around;
+          gap: 15px;
+          margin: 20px 0;
+          flex-wrap: wrap;
+        }
+        .flex-item {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+        
+        .flex-item:hover {
+            transform: translateY(-5px);
+            background: #764ba2;
+        }
+        /*estilo para caixa filha*/
+        
+         /*estilo rodapé coloque o preenchimento e o cor de fundo*/
+        .rodape {
+            background: #6322b9;
+            padding: 20px;
+
+            /*comandos para deixar a posição fixa*/
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PASSO 3: Criar o cabeçalho (header) -->
+    <!-- coloque no estilo uma cor no cabeçalho -->
+    <header class="cabecalho">
+        <!-- Coloque um titulo em h1 com algo escrito-->
+        <h1>Projeto Héctor</h1>
+    </header>
+
+    <!-- PASSO 4: Criar as 3 caixas colocar classes ou id e estilizar -->
+        <div class="flex-container">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+
+
+
+    <!-- PASSO 5: Criar o rodapé fixo -->
+    <!-- colocoque uma cor no seu rodape la em cima nos estilos -->
+    <footer class="rodape">
+        <p>© 2026 — Aula sites Hector</p>
+        
+    </footer>
+
+</body>
+
+</html>
